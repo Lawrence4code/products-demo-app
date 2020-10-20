@@ -36,9 +36,9 @@ const LoginPage = () => {
 
   return (
     <div className="h-screen text-center">
-      <div className="w-8/12 mx-auto  mt-20">
+      <div className="w-9/12 mx-auto mt-40">
         <h2 className="font-logo text-4xl">
-          Welcome to Awesome Products, please login to manage products.
+          Welcome to Awesome Products, please login to manage your products.
         </h2>
         <form
           onSubmit={handleSubmit(onSubmit)}
@@ -65,7 +65,7 @@ const LoginPage = () => {
               />
             </div>
             {errors.name && (
-              <p className="block text-red-600 text-xs font-semibold px-1">
+              <p className="block text-right text-red-600 text-xs font-semibold">
                 {errors?.name?.message}
               </p>
             )}
@@ -90,7 +90,7 @@ const LoginPage = () => {
               />
             </div>
             {errors.email && (
-              <p className="block text-red-600 text-xs font-semibold px-1">
+              <p className="block text-right text-red-600 text-xs font-semibold ">
                 {errors?.email?.message}
               </p>
             )}
