@@ -10291,6 +10291,10 @@ video {
   clear: none;
 }
 
+.font-logo {
+  font-family: Lobster;
+}
+
 .font-body {
   font-family: lato;
 }
@@ -28927,6 +28931,10 @@ video {
     clear: none;
   }
 
+  .sm\:font-logo {
+    font-family: Lobster;
+  }
+
   .sm\:font-body {
     font-family: lato;
   }
@@ -47531,6 +47539,10 @@ video {
 
   .md\:clear-none {
     clear: none;
+  }
+
+  .md\:font-logo {
+    font-family: Lobster;
   }
 
   .md\:font-body {
@@ -66139,6 +66151,10 @@ video {
     clear: none;
   }
 
+  .lg\:font-logo {
+    font-family: Lobster;
+  }
+
   .lg\:font-body {
     font-family: lato;
   }
@@ -84743,6 +84759,10 @@ video {
 
   .xl\:clear-none {
     clear: none;
+  }
+
+  .xl\:font-logo {
+    font-family: Lobster;
   }
 
   .xl\:font-body {

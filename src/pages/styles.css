@@ -1,0 +1,14 @@
+.page-not-found {
+  color: #363636;
+  text-align: center;
+  margin-top: 20%;
+  height: 100vh;
+}
+
+.page-not-found__title {
+  font-size: 3rem;
+}
+
+.page-not-found__message {
+  font-size: 1.5rem;
+}
