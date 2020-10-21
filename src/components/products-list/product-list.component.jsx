@@ -15,12 +15,12 @@ const ProductList = () => {
     <div>
       {products.length > 0 ? (
         <table className="w-11/12 mt-10 mx-auto text-center">
-          <thead>
+          <thead className="bg-gray-100 bg-opacity-50">
             <tr>
-              <th> Product </th>
-              <th> Description </th>
-              <th> Quantity </th>
-              <th> Price </th>
+              <th className="py-1 rounded"> Product </th>
+              <th className="py-1 rounded"> Description </th>
+              <th className="py-1 rounded"> Quantity </th>
+              <th className="py-1 rounded"> Price </th>
             </tr>
           </thead>
           <tbody>
@@ -36,8 +36,7 @@ const ProductList = () => {
         </table>
       ) : (
         <p className="text-center mt-40">
-          {' '}
-          No products or No products based on your filters.{' '}
+          No products or No products based on your filters.
         </p>
       )}
     </div>

@@ -5,23 +5,17 @@ export const setProducts = (products) => ({
   payload: products,
 });
 
-export const addProduct = (product) => {
-  return {
-    type: productsActionsTypes.ADD_PRODUCT,
-    payload: product,
-  };
-};
+export const addProduct = (product) => ({
+  type: productsActionsTypes.ADD_PRODUCT,
+  payload: product,
+});
 
-export const searchProduct = (searchTerm) => {
-  return {
-    type: productsActionsTypes.SEARCH_PRODUCT,
-    payload: searchTerm,
-  };
-};
+export const searchProduct = (searchTerm) => ({
+  type: productsActionsTypes.SEARCH_PRODUCT,
+  payload: searchTerm,
+});
 
-export const sortProducts = (payload) => {
-  return {
-    type: productsActionsTypes.SORT_FILTERED_PRODUCTS,
-    payload,
-  };
-};
+export const sortProducts = (payload) => ({
+  type: productsActionsTypes.SORT_FILTERED_PRODUCTS,
+  payload,
+});

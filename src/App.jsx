@@ -5,7 +5,7 @@ import LoginPage from './pages/LoginPage';
 import ProductsList from './pages/ProductsList';
 import PageNotFound from './pages/PageNotFound';
 import PrivateRoute from './components/utils/PrivateRoute';
-import UserProfile from './pages/UserProfile'
+import UserProfile from './pages/UserProfile';
 
 import './App.css';
 

@@ -21,9 +21,11 @@ const Header = () => {
   };
   return (
     <div className="flex justify-between items-center content-center px-5 ">
-      <div className="font-logo text-5xl">Awesome Products</div>
+      <div className="font-logo text-gray-700 text-5xl">Awesome Products</div>
       <div>
-        {user.name && <NavLink to="/profile"> User: {user.name.toUpperCase()}</NavLink>}
+        {user.name && (
+          <NavLink to="/profile"> User: {user.name.toUpperCase()}</NavLink>
+        )}
         {user.auth ? (
           <button
             onClick={handleLogoutClick}
