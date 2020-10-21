@@ -1,14 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import Header from '../components/header/header.component';
 import { NavLink } from 'react-router-dom';
+import { setProducts } from './../redux/products/products.actions';
 
 import AddProductModal from '../components/add-product-modal/add-product-modal.component';
 
 const UserProfile = () => {
+  const dispatch = useDispatch();
   const user = useSelector((state) => state.user);
   const [showModal, setShowModal] = useState(false);
-  const products = useSelector((state) => state.products.filteredItems);
+  const products = useSelector((state) => state.products.items);
+
+  useEffect(() => {
+    const items = JSON.parse(localStorage.getItem('items')) || [];
+    dispatch(setProducts(items));
+  }, [dispatch]);
 
   const openAddProductModal = () => {
     setShowModal(true);

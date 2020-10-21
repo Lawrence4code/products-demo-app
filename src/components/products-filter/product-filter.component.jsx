@@ -9,11 +9,9 @@ import {
 } from './../../redux/products/products.actions';
 
 const ProductFilter = () => {
-  const [sortOrder, setSortOrder] = useState('asc');
+  const [sortOrder] = useState('asc'); // setSortOrder is not used as descending order is not add to the functionality, can be easily added and enhanced later
   const dispatch = useDispatch();
   const [showModal, setShowModal] = useState(false);
-
-  // setSortOrder is not used as descending order is not add to the functionality, can be easily added and enhanced later
 
   const openAddProductModal = () => {
     setShowModal(true);
